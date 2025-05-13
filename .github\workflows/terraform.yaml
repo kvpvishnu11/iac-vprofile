@@ -1,6 +1,6 @@
 name: "KVP_Vprofile IAC"
 
-#Mention the trigger with "On" keyword
+#Mention the trigger with "On" keywords
 
 on: 
   push:
@@ -69,4 +69,3 @@ jobs:
       - name: Terraform plan Status
         if: steps.plan.outcome == 'failure'
         run: exit 1
-        
